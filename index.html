@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let data=fetch(" http://localhost:3202/posts")
+        // data.then((e)=>e.json()).then((e)=>console.log(e))
+        let data=fetch(" http://localhost:3202/comments",{
+            method:"get",
+            headers:{"Content-Type":"application/json"},
+        })
+        data.then((e)=>e.json()).then((e)=>console.log(e))
+         
+    </script>
+    
+</body>
+</html>
